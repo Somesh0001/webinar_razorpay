@@ -1,5 +1,5 @@
 "use client";
-
+import PaymentButton from "./PaymentButton";
 import { signIn, signOut, useSession } from "next-auth/react";
 import React from "react";
 
@@ -24,6 +24,10 @@ const Dashboard = () => {
           >
             Sign Out
           </button>
+          <div>
+            <h3> Payment Button to tet Razorpay integration : </h3>
+            <PaymentButton amount={1} />
+          </div>
         </>
       ) : (
         <>
