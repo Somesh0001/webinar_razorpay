@@ -4,8 +4,6 @@ import React, { Suspense, useState } from "react";
 import { useRouter } from "next/navigation";
 import Loading from "@/app/loading";
 import { useSession } from "next-auth/react";
-import { cn } from "@/lib/utils";
-import { NextResponse } from "next/server";
 
 // Define types for props
 interface PaymentButtonProps {
